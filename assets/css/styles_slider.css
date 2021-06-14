@@ -1,0 +1,379 @@
+/*====================================*/
+/* slider */
+#slider_container {
+  height: 575px;
+  position: relative;
+}
+
+#slider_container #slider_handset_list_container {
+  display: none;
+}
+
+#slider_container #slider_handset_list_container ul li {
+  -webkit-transition: opacity .25s;
+  transition: opacity .25s;
+}
+
+#slider_container #slider_handset_list_container ul li.hide_slow {
+  opacity: 0;
+}
+
+#slider_container #slider_handset_list_container ul li h2 {
+  font-family: 'Intel Medium';
+}
+
+#slider_container #slider_mobile_prompt {
+  display: none;
+}
+
+#slider_container #swipe_hand {
+  display: none;
+}
+
+#slider_container #swipe_hand .cls-1 {
+  fill: none;
+}
+
+#slider_container #swipe_hand .cls-2 {
+  -webkit-clip-path: url(#swipe_hand#clip-path);
+  clip-path: url(#swipe_hand#clip-path);
+}
+
+#slider_container #swipe_hand .cls-3 {
+  fill: #6abafb;
+}
+
+#slider_container #swipe_hand .cls-4 {
+  fill: #fff;
+}
+
+#slider_container #slider_footer {
+  position: absolute;
+  height: 83px;
+  width: 100%;
+  bottom: 0;
+  background: #151a2b;
+  background: -webkit-gradient(linear, left bottom, left top, from(#151a2b), color-stop(25%, #151a2b), to(rgba(21, 26, 43, 0)));
+  background: linear-gradient(0deg, #151a2b 0%, #151a2b 25%, rgba(21, 26, 43, 0) 100%);
+  z-index: 9;
+}
+
+#slider_container #slider_copy {
+  position: relative;
+  height: 125px;
+  background: #151a2b;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(21, 26, 43, 0)), color-stop(15%, #151a2b), to(#151a2b));
+  background: linear-gradient(0deg, rgba(21, 26, 43, 0) 0%, #151a2b 15%, #151a2b 100%);
+  z-index: 9;
+}
+
+#slider_container #slider_copy #slider_headline {
+  padding-top: 30px;
+  line-height: 40px;
+  font-size: 40px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-family: "Intel Light";
+}
+
+#slider_container #slider_copy .slider_prompt {
+  padding-top: 8px;
+  line-height: 22px;
+  font-size: 22px;
+  width: 100%;
+  text-align: center;
+  color: #6abafb;
+  font-family: "Intel Regular";
+}
+
+#slider_container #slider_thumb {
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  width: 120px;
+}
+
+#slider_container #slider_thumb #slider_thumb_img {
+  position: absolute;
+  left: 2px;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  top: 160px;
+}
+
+#slider_container #slider_thumb #slider_thumb_line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 5px;
+  height: 100%;
+  background-color: #25AEFF;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#slider_container .slide_container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+#slider_container #slides {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+#slider_container #slides .hotspot,
+#slider_container #slides .callout {
+  position: absolute;
+  background-color: #E8E029;
+  z-index: 9;
+}
+
+#slider_container #slides .hotspot {
+  width: 13px;
+  height: 13px;
+  /* latest tech */
+  /* thunderbolt */
+  /* optane */
+  /* killer */
+}
+
+#slider_container #slides .hotspot#hotspot_0,
+#slider_container #slides .hotspot#hotspot_10 {
+  left: 361px;
+  top: 232px;
+  -webkit-transform-origin: bottom right;
+  transform-origin: bottom right;
+}
+
+#slider_container #slides .hotspot#hotspot_1,
+#slider_container #slides .hotspot#hotspot_11 {
+  left: 351px;
+  top: 409px;
+  -webkit-transform-origin: top right;
+  transform-origin: top right;
+}
+
+#slider_container #slides .hotspot#hotspot_2,
+#slider_container #slides .hotspot#hotspot_12 {
+  left: 651px;
+  top: 383px;
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+}
+
+#slider_container #slides .hotspot#hotspot_3,
+#slider_container #slides .hotspot#hotspot_13 {
+  left: 645px;
+  top: 227px;
+  -webkit-transform-origin: bottom left;
+  transform-origin: bottom left;
+}
+
+#slider_container #slides .callout {
+  width: 300px;
+  background-color: rgba(16, 13, 38, 0.7);
+  border-radius: 5px;
+  color: #fff;
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  padding: 15px;
+  -webkit-transition: opacity .5s, -webkit-transform .5s;
+  transition: opacity .5s, -webkit-transform .5s;
+  transition: transform .5s, opacity .5s;
+  transition: transform .5s, opacity .5s, -webkit-transform .5s;
+  /* latest tech */
+  /* thunderbolt */
+  /* optane */
+  /* killer */
+}
+
+#slider_container #slides .callout h2 {
+  font-size: 16px;
+  line-height: 17px;
+  margin-bottom: 5px;
+  -webkit-transition: color .25s;
+  transition: color .25s;
+}
+
+#slider_container #slides .callout p {
+  font-size: 12px;
+  line-height: 13px;
+  -webkit-transition: color .25s;
+  transition: color .25s;
+}
+
+#slider_container #slides .callout.scale_up {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+#slider_container #slides .callout.scale_up:hover {
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+}
+
+#slider_container #slides .callout#callout_0,
+#slider_container #slides .callout#callout_10 {
+  top: 136px;
+  left: 48px;
+  -webkit-transform-origin: bottom right;
+  transform-origin: bottom right;
+  text-align: right;
+}
+
+#slider_container #slides .callout#callout_0 h2,
+#slider_container #slides .callout#callout_10 h2 {
+  padding-left: 33%;
+}
+
+#slider_container #slides .callout#callout_10 {
+  width: 313px;
+}
+
+#slider_container #slides .callout#callout_0 {
+  width: 295px;
+  left: 67px;
+}
+
+#slider_container #slides .callout#callout_0 h2 {
+  padding-left: 25%;
+}
+
+#slider_container #slides .callout#callout_1,
+#slider_container #slides .callout#callout_11 {
+  top: 425px;
+  left: 75px;
+  width: 274px;
+  -webkit-transform-origin: top right;
+  transform-origin: top right;
+  text-align: right;
+}
+
+#slider_container #slides .callout#callout_1 {
+  width: 285px;
+  left: 66px;
+}
+
+#slider_container #slides .callout#callout_2,
+#slider_container #slides .callout#callout_12 {
+  top: 273px;
+  left: 666px;
+  width: 286px;
+  -webkit-transform-origin: bottom left;
+  transform-origin: bottom left;
+}
+
+#slider_container #slides .callout#callout_2 h2,
+#slider_container #slides .callout#callout_12 h2 {
+  padding-right: 33%;
+}
+
+#slider_container #slides .callout#callout_2 {
+  width: 270px;
+  top: 288px;
+}
+
+#slider_container #slides .callout#callout_2 h2 {
+  padding-right: 10%;
+}
+
+#slider_container #slides .callout#callout_2 p {
+  padding-right: 10%;
+}
+
+#slider_container #slides .callout#callout_3,
+#slider_container #slides .callout#callout_13 {
+  top: 120px;
+  left: 659px;
+  width: 270px;
+  -webkit-transform-origin: bottom left;
+  transform-origin: bottom left;
+}
+
+#slider_container #slides .callout#callout_3 h2,
+#slider_container #slides .callout#callout_13 h2 {
+  padding-right: 15%;
+}
+
+#slider_container #slides .callout#callout_3 {
+  top: 131px;
+  width: 255px;
+}
+
+#slider_container #slides .callout#callout_3 h2 {
+  padding-right: 5%;
+}
+
+#slider_container .slide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+#slider_container #slide_right .slide {
+  background-image: url(../img/slide_day.jpg);
+}
+
+#slider_container #slide_left {
+  width: 50%;
+  overflow: hidden;
+}
+
+#slider_container #slide_left .slide {
+  background-image: url(../img/slide_night.jpg);
+}
+
+/*====================================================================================*/
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.25, 1.25, 1.25);
+    transform: scale3d(1.25, 1.25, 1.25);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.25, 1.25, 1.25);
+    transform: scale3d(1.25, 1.25, 1.25);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}

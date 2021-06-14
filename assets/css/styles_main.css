@@ -1,0 +1,544 @@
+/*====================================*/
+/* change your font path here */
+@font-face {
+  font-family: 'Intel Regular';
+  src: url("../fonts/intelone_display/Latn/intelone-display-regular.woff2") format("woff2"), url("../fonts/intelone_display/Latn/intelone-display-regular.woff") format("woff"), url("../fonts/intelone_display/Latn/intelone-display-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Intel Medium';
+  src: url("../fonts/intelone_display/Latn/intelone-display-medium.woff2") format("woff2"), url("../fonts/intelone_display/Latn/intelone-display-medium.woff") format("woff"), url("../fonts/intelone_display/Latn/intelone-display-medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Intel Light';
+  src: url("../fonts/intelone_display/Latn/intelone-display-light.woff2") format("woff2"), url("../fonts/intelone_display/Latn/intelone-display-light.woff") format("woff"), url("../fonts/intelone_display/Latn/intelone-display-light.ttf") format("truetype");
+}
+
+/*
+@font-face {
+  font-family: 'Intel Bold';
+  src:
+    url('../fonts/intelone_display/Latn/intelone-display-bold.woff2') format('woff2'),
+    url("../fonts/intelone_display/Latn/intelone-display-bold.woff") format("woff"),
+    url("../fonts/intelone_display/Latn/intelone-display-bold.ttf") format("truetype");
+}
+*/
+/*====================================*/
+/* dev */
+#template {
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 0;
+  border: 1px solid #00f;
+  opacity: .66;
+  display: none;
+}
+
+#container {
+  /*border: 1px solid #f00;*/
+}
+
+/*====================================*/
+* {
+  opacity: 1;
+  font-family: 'Intel Regular', sans-serif;
+  /*color: #58595B;*/
+}
+
+/*
+strong,
+b,
+.bold {
+  font-family: 'Intel Bold', sans-serif;
+}
+*/
+.grey {
+  color: #abc6d7 !important;
+}
+
+.kewl {
+  font-family: 'Intel Medium';
+  color: #f00;
+  background-color: #FCFEFF;
+  background-image: linear-gradient(-45deg, #FCFEFF, #7F92A4, #FCFEFF, #7F92A4, #FCFEFF);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.light {
+  font-family: 'Intel Light', sans-serif;
+}
+
+.medium {
+  font-family: 'Intel Medium', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  padding: 0px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.hide {
+  display: none !important;
+}
+
+.hide_desktop {
+  display: none;
+}
+
+/* animation settings for element fade */
+.animated {
+  -webkit-animation-duration: 0.1s;
+  animation-duration: 0.1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* for layering objects */
+.front {
+  z-index: 9 !important;
+}
+
+/*====================================*/
+/* outer container */
+#container {
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  width: 1000px;
+}
+
+/* module 0 : header */
+#header_container {
+  background-color: #151A2B;
+  width: 100%;
+  background-image: url(../img/header_hero.jpg);
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  padding: 80px 0 0 45px;
+  min-height: 640px;
+}
+
+#header_container * {
+  color: #fff;
+}
+
+#header_container p#header_tag {
+  font-family: 'Intel Light';
+  font-size: 13px;
+  margin: 0 0 5px 100px;
+  padding-left: 3px;
+}
+
+#header_container h1 {
+  font-family: 'Intel Light';
+  font-size: 59px;
+  margin-left: 100px;
+  margin-right: 430px;
+  line-height: 58px;
+  letter-spacing: 1.5px;
+}
+
+#header_container img#header_hero {
+  margin: 30px 0 0 103px;
+}
+
+/* module 1 : main */
+#main_container {
+  background-color: #151A2B;
+  width: 100%;
+  background-image: url(../img/main_hero.png);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  padding: 60px 0 50px 0;
+  min-height: 600px;
+  /* design request to close gap between modules */
+  margin-top: -120px;
+}
+
+#main_container * {
+  color: #fff;
+  margin-left: 475px;
+}
+
+#main_container h1 {
+  font-family: 'Intel Light';
+  font-size: 37px;
+  line-height: 40px;
+  margin-bottom: 56px;
+}
+
+#main_container h2 {
+  font-family: 'Intel Light';
+  font-size: 27px;
+  line-height: 27px;
+}
+
+#main_container h3 div {
+  font-size: 31px;
+  color: #23aae7;
+  display: block;
+}
+
+#main_container h3 div.small {
+  font-size: 18px;
+}
+
+#main_container h3 div.blue {
+  font-size: 20px;
+}
+
+#main_container h3 .kewl {
+  font-size: 31px;
+}
+
+#main_container h3 * {
+  margin-left: 0;
+}
+
+#main_container ul {
+  margin-top: 25px;
+  margin-bottom: 48px;
+}
+
+#main_container ul#main_ul_0 {
+  padding-right: 0px;
+}
+
+#main_container ul#main_ul_10 {
+  padding-right: 150px;
+}
+
+#main_container ul li {
+  font-size: 15px;
+  padding-left: 20px;
+  list-style-type: square;
+  color: #23aae7;
+  margin-left: 17px;
+  margin-bottom: 10px;
+  /* custom line breaks for design */
+}
+
+#main_container ul li#main_list_item_0 {
+  padding-right: 142px;
+}
+
+#main_container ul li#main_list_item_1 {
+  padding-right: 0;
+}
+
+#main_container ul li#main_list_item_10 {
+  padding-right: 60px;
+}
+
+#main_container ul li#main_list_item_11 {
+  padding-right: 0;
+}
+
+#main_container ul li::marker {
+  font-size: 15px;
+}
+
+#main_container #main_subhead_1 {
+  margin-top: 15px;
+}
+
+/* module 3 : compare */
+#compare_container {
+  width: 100%;
+  padding: 20px;
+  background: #374657;
+  background: -webkit-gradient(linear, left bottom, left top, from(#374657), color-stop(80%, #151a2b));
+  background: linear-gradient(0deg, #374657 0%, #151a2b 80%);
+  position: relative;
+}
+
+#compare_container * {
+  color: #fff;
+}
+
+#compare_container #compare_product_container {
+  position: relative;
+  width: 95%;
+  height: 100%;
+  background: #030809;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #030809), color-stop(90%, #172890));
+  background: linear-gradient(180deg, #030809 50%, #172890 90%);
+  margin: 20px auto 50px;
+  z-index: 2;
+  display: table;
+}
+
+#compare_container #compare_product_container * {
+  text-align: center;
+}
+
+#compare_container #compare_product_container .compare_product {
+  vertical-align: top;
+  text-align: center;
+  position: relative;
+  width: 33%;
+  height: 100%;
+  padding: 30px 10px;
+  display: table-cell;
+  border: 4px solid transparent;
+  /*h4,
+      h5 {
+        color: #23aae7;
+        font-size: 20px;
+        line-height: 20px;
+        padding: 0 25%;
+        letter-spacing: 1px;
+      }
+
+      h4 {
+        font-size: 27px;
+        line-height: 30px;
+      }
+      #compare_i5_subhead_1,
+      #compare_i7a_subhead_1,
+      #compare_i7b_subhead_1 {
+        letter-spacing: initial;
+      }
+      */
+}
+
+#compare_container #compare_product_container .compare_product i {
+  position: relative;
+  font-style: normal;
+  top: -4px;
+  font-size: 17px;
+}
+
+#compare_container #compare_product_container .compare_product.active {
+  border: 4px solid #0B1067;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #030809), color-stop(60%, #172890));
+  background: linear-gradient(180deg, #030809 10%, #172890 60%);
+  -webkit-box-shadow: 0 0 40px #000;
+  box-shadow: 0 0 40px #000;
+}
+
+#compare_container #compare_product_container .compare_product img {
+  margin: 28px 0 30px;
+}
+
+#compare_container #compare_product_container .compare_product h3 {
+  font-family: 'Intel Medium';
+  color: #23aae7;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 0 26px;
+  /*&#compare_i7a_headline {
+          padding: 0 8px;
+        }*/
+}
+
+#compare_container #compare_product_container .compare_product h3 sup {
+  color: #23aae7;
+}
+
+#compare_container #compare_product_container .compare_product#compare_product_2 {
+  padding: 30px 5px;
+}
+
+#compare_container #compare_product_container .compare_product h4#compare_i5_subhead,
+#compare_container #compare_product_container .compare_product h4#compare_i7a_subhead,
+#compare_container #compare_product_container .compare_product h4#compare_i7b_subhead {
+  color: #23aae7;
+  font-size: 17px;
+  line-height: 17px;
+  padding: 0 15%;
+}
+
+#compare_container #compare_product_container .compare_product h4#compare_i5_subhead span,
+#compare_container #compare_product_container .compare_product h4#compare_i7a_subhead span,
+#compare_container #compare_product_container .compare_product h4#compare_i7b_subhead span {
+  color: #23aae7;
+  display: block;
+  letter-spacing: initial;
+  font-size: 23px;
+  line-height: 27px;
+}
+
+#compare_container #compare_product_container .compare_product h3#compare_i7b_headline {
+  padding: 0px 0px;
+}
+
+#compare_container #compare_product_container .compare_product p {
+  font-size: 20px;
+  margin: 16px 0;
+  padding: 0 20px;
+}
+
+#compare_container #compare_product_container .compare_product p span {
+  display: none;
+}
+
+#compare_container #compare_product_container .compare_product p:last-child {
+  margin-bottom: 0px;
+}
+
+#compare_container #compare_bg_container {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  width: 480px;
+  height: 480px;
+  background-size: cover;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#compare_container #compare_bg_container #compare_bg_color {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(43, 75, 107, 0);
+  background: linear-gradient(135deg, rgba(43, 75, 107, 0) 50%, #2b4b6b 80%);
+  z-index: 0;
+}
+
+#compare_container #compare_bg_container #compare_bg_img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/compare_hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+#compare_container #compare_header h1 {
+  font-family: 'Intel Light';
+  width: 100%;
+  text-align: center;
+  font-size: 37px;
+}
+
+/* legal */
+#legal_copy {
+  display: none;
+  background-color: #15192A;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+
+#legal_copy div {
+  position: relative;
+  float: left;
+  padding: 20px 100px 50px 50px;
+}
+
+#legal_copy div p {
+  font-family: 'Intel Regular';
+  font-size: 11.5px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+#legal_copy #legal_close {
+  position: relative;
+  float: right;
+}
+
+#legal_toggle {
+  position: absolute;
+  left: 25px;
+  bottom: 20px;
+  z-index: 99;
+}
+
+#legal_toggle span {
+  display: inline-block;
+  font-size: 11px;
+  color: #fff;
+}
+
+#legal_toggle #legal_arrow {
+  position: relative;
+  width: 11px;
+  height: 11px;
+  top: 2px;
+  margin-left: 3px;
+  background-image: url(../img/arrow_sm.png);
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transition: -webkit-transform .25s;
+  transition: -webkit-transform .25s;
+  transition: transform .25s;
+  transition: transform .25s, -webkit-transform .25s;
+  background-size: cover;
+}
+
+.legal #legal_toggle #legal_arrow {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.legal #legal_copy {
+  display: block;
+}
+
+/*====================================*/
+/* shade */
+#modal_shade {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 99;
+  position: absolute;
+}
+
+#modal_shade div {
+  margin-bottom: 20px;
+}
+
+#modal_shade .loader {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 200px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 15%;
+}
+
+#modal_shade .sep {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+}
+
+#modal_shade #preloader_percent {
+  font-family: 'Intel Clear Regular', sans-serif;
+  font-size: 10px;
+  color: #ccc;
+}
+
+/*====================================*/
+/* preload container */
+#preload_container {
+  display: none;
+}
+
+/*====================================================================================*/
